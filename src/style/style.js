@@ -48,7 +48,7 @@ table {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0a0a0a;    /* color of the scroll thumb */
+  background-color: var(--red);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
