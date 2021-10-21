@@ -10,8 +10,6 @@ const PageFormatura = () => {
   const history = useHistory();
   const { formatura } = useContext(FormaturaContext);
 
-  console.log(formatura);
-
   const handleClick = (page) => {
     history.push(`${page}`);
   };

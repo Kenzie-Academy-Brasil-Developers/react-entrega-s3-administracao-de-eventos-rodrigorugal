@@ -5,14 +5,10 @@ import { useHistory } from "react-router";
 import { BodyCasamento, FullScreenCasamento } from "./style";
 import HeaderComponent from "../../components/HeaderComponent";
 import Product from "../../components/Product";
-import { FormaturaContext } from "../../Providers/Formatura";
-import { ConfraContext } from "../../Providers/Confraternizacao";
 
 const PageCasamento = () => {
   const history = useHistory();
   const { casamento } = useContext(CasamentoContext);
-  const { confra } = useContext(ConfraContext);
-  const { formatura } = useContext(FormaturaContext);
 
   const handleClick = (page) => {
     history.push(`${page}`);
@@ -44,15 +40,6 @@ const PageCasamento = () => {
         >
           Voltar
         </ButtonComponent>
-        <button
-          onClick={() => {
-            console.log("casamento", casamento);
-            console.log("confra", confra);
-            console.log("formatura", formatura);
-          }}
-        >
-          teste
-        </button>
       </div>
     </FullScreenCasamento>
   );
